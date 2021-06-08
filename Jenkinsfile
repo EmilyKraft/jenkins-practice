@@ -1,20 +1,19 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('Build') {
             steps {
-//                 sh 'mvn --version'
-                echo 'this is my pipeline'
+                echo 'BUILDING'
             }
         }
-        stage('test') {
+        stage('Test') {
             steps {
-//                 sh 'mvn --version'
+                echo 'TESTING'
             }
         }
-        stage('deploy') {
+        stage('Deploy') {
             steps {
-//                 sh 'mvn --version'
+                echo 'DEPLOYING'
             }
         }
     }
